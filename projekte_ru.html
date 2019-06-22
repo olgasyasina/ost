@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+
+    <meta charset="utf-8">
+    <title>OST - Olga Syasina Translations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Übersetzungen">
+    <meta name="author" content="Olga Syasina">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="selbst.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+
+    <style>
+        #map {
+            height: 40em;
+        }
+    </style>
+  </head>
+
+  <body>
+
+  <div class="container-fluid">
+
+    <div class="row-fluid"> 
+      <div class="span11">
+        <p class="pull-right muted"> 
+          <a href="projekte_ru.html">Русский</a> &bull; <a href="projekte.html">Deutsch</a>
+        </p>
+      </div>
+      <div class="span1">  
+      </div>
+    </div>
+
+    <div class="row-fluid"> 
+        <div class="span1">
+        </div>
+        <div class="span3">
+          <img src="bilder/portrait.jpg" width="57%" alt="Portrait"/>
+        </div>
+        <div class="span7">
+          <img src="bilder/webseite.png" width="100%" alt="Bild"/>
+        </div>
+        <div class="span1">
+        </div>
+    </div>
+    
+    <div class="row-fluid"> 
+        <div class="span1">
+        </div>  
+        <div class="span3">
+            <ul class="nav nav-list">
+              <li class="disabled"><a href="#"></a></li>
+              <li class="disabled"><a href="#"></a></li>
+              <li class="disabled"><a href="#"></a></li>
+              <li class="active"><a href="index_ru.html">Главная</a></li>
+              <li class="disabled"><a href="uebermich_ru.html">Обо мне</a></li>
+              <li class="disabled"><a href="beglaubigt_ru.html">Заверенные переводы</a></li>
+              <li class="disabled"><a href="preise_ru.html">Цены</a></li>
+              <li class="disabled"><a href="projekte_ru.html">Проекты</a></li>
+              <li class="disabled"><a href="impressum_ru.html">Impressum</a></li>
+              <li class="disabled"><a href="kontakt_ru.html">Контакт</a></li>
+            </ul>
+        </div>
+
+        <div class="span7">
+            <h2>Проекты</h2>
+
+            <p>На этой странице я публикую результаты моих небольших проектов, которые могут быть полезны другим.</p>
+              
+              <h3>Русские детские сады в Берлине</h3>
+            
+                <p>Если у вас есть дети, то вам нужен детский сад. А если вы хотите, чтобы ребенок говорил и на русском и на немецком, то вам нужен билингвальный детский сад. С помощью этой программы <a href="https://github.com/asmaier/kartenmacher">Создай свою карту</a> я составила карту, на которой одновременно можно увидеть все известные мне русско-немецкие детские сады в Берлине и Потсдаме.</p>
+
+                <div id="map"></div>
+
+                <p>Вы нашли ошибку на карте или знаете не указанный здесь детский сад? Напишите мне письмо на электронную почту <a href="mailto:o.syasina@gmail.com">o.syasina@gmail.com</a> и я постараюсь исправить ошибку или нанести на карту новый адрес.</p>     
+            
+              <h3>Частотный список</h3>
+            
+                <p>Частотный список будет интересен тем, кто хочет выучить русский язык быстро и эффективно. В частотном списке слова, встречающиеся наиболее часто, расположены в начале, т.е. они позволяют оценить, какие слова являются наиболее важными для изучения языка. Один такой частотный список из 1000 лемм (словарныя форма слов) я перевела с русского на немецкий, за основу был взят список частотных лемм с веб-страницы:  (<a href="http://www.artint.ru/projects/frqlist.php">www.artint.ru/projects/frqlist.php</a>).</p>
+
+                <p>Отрывок из частотного списка (десять наиболее часто встречающихся слов):</p>
+                <table class="table table-bordered">
+                <caption class="lead"></caption>
+
+                <thead>
+                <tr>
+                <th>Русский:</th>
+                <th>Немецкий:</th>
+                <th>Часть речи:</th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                                  
+                <tr><td>и</td><td>und</td><td>misc</td></tr>
+                <tr><td>в</td><td>in</td><td>prep</td></tr>
+                <tr><td>не</td><td>nicht</td><td>misc</td></tr>
+                <tr><td>он</td><td>er</td><td>pron</td></tr>
+                <tr><td>на</td><td>auf, an, nach</td><td>prep</td></tr>
+                <tr><td>я</td><td>ich</td><td>pron</td></tr>
+                <tr><td>что</td><td>was, dass</td><td>misc</td></tr>
+                <tr><td>тот</td><td>jener</td><td>adjpron</td></tr>
+                <tr><td>быть</td><td>sein</td><td>verb</td></tr>
+                <tr><td>с</td><td>mit</td><td>prep</td></tr>
+
+                </tbody>
+                </table>
+
+                <p>Весь частотный список вы можете скачать в формате PDF здесь: <a href="dateien/Haeufigkeitsliste.pdf">Частотный список</a>.</p>
+            
+            
+              <h3>Wiki-словарь</h3>
+            
+                <p>Wiki-словарь может пригодится переводчикам. Помимо словарей, энциклопедий и других справочных материалов <a href="http://www.wikipedia.org">Википедия</a> также является важным источником информации для всех, кто хочет получить адекватный перевод. Используя этот <a href="https://github.com/asmaier/wiki2dict">Script</a>, я получила файл в формате Excel, который содержит названия статей немецкой и русской Википедии с их переводами в форме таблицы. Этот файл можно использовать как словарь, кроме этого его можно преобразовать в глоссарий для CAT-Tools.</p>
+
+                <p>Отрывок из Wiki-словаря (десять случайно выбранных примеров):</p>
+                <table class="table table-bordered">
+                <caption class="lead"></caption>
+
+                <thead>
+                <tr>
+                <th>Немецкий:</th>
+                <th>Русский:</th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                                  
+                <tr><td>Eduard-Strelzow-Stadion</td><td>Стадион имени Эдуарда Стрельцова</td></tr>
+                <tr><td>Ursodeoxycholsäure</td><td>Урсодезоксихолевая кислота</td></tr>
+                <tr><td>Waldgeißblatt</td><td>Жимолость вьющаяся</td></tr>
+                <tr><td>Unter den Linden</td><td> Унтер-ден-Линден</td></tr>
+                <tr><td>Konzeptkunst</td><td>Концептуальное искусство</td></tr>
+                <tr><td>Weltraumtourismus</td><td>Космический туризм</td></tr>
+                <tr><td>Elektronische Bremskraftverteilung</td><td>Система распределения тормозных усилий</td></tr>
+                <tr><td>Hurro-urartäische Sprachen</td><td>Хуррито-урартские языки</td></tr>
+                <tr><td>Ibn asch-Schatir</td><td>Ибн аш-Шатир</td></tr>
+                <tr><td>Tablet-Computer</td><td>Планшетный компьютер</td></tr>
+
+                </tbody>
+                </table>
+
+                <p>Весь список вы можете скачать в формате Excel (13 MB) здесь: <a href="dateien/wiki-woerterbuch.xlsx">Wiki-словарь</a>.</p>
+            
+        </div>
+        <div class="span1">
+        </div>
+    </div>
+    
+    <div class="row-fluid"> 
+        <div class="span12">
+        </div>
+    </div>
+
+    <div class="row-fluid">     
+        <div class="span11">
+          <footer>
+            <p class="pull-right muted">&copy; A&amp;O Webdesign</p>
+          </footer>
+        </div>
+        <div class="span1">
+        </div>
+    </div>
+  
+  </div>
+  <script>
+    var map = L.map('map', {
+        fullscreenControl: true}
+    );
+
+    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+    var markers = [];
+
+    markers.push(L.marker([52.5316588, 13.4260574]).addTo(map).bindPopup('Kita Bienchen<br />Immanuelkirchstr 14b, 10405 Berlin<br /><a target="_blank" href="http://bilingua.org/kita-bienchen-2/">http://bilingua.org/kita-bienchen-2/</a>'));
+markers.push(L.marker([52.54369, 13.18528]).addTo(map).bindPopup('Christliche deutsch-russische Kita Kinderarche Berlin e.V.<br />Germersheimer Weg 27-29, 13583 Berlin<br /><a target="_blank" href="http://www.kinderarche-berlin.de/">http://www.kinderarche-berlin.de/</a>'));
+markers.push(L.marker([52.4496491, 13.5080012]).addTo(map).bindPopup('Kita Sternschnuppe<br />Sterndamm 41-43, 12487 Berlin<br /><a target="_blank" href="http://www.kitanetz.de/12487/karussel.htm">http://www.kitanetz.de/12487/karussel.htm</a>'));
+markers.push(L.marker([52.60298, 13.3627]).addTo(map).bindPopup('Kita Kalinka<br />Senftenberger Ring 34, 13435 Berlin<br /><a target="_blank" href="http://kita-kalinka.bifiz.de/kontakt-kita/">http://kita-kalinka.bifiz.de/kontakt-kita/</a>'));
+markers.push(L.marker([52.4690045, 13.3300305]).addTo(map).bindPopup('Kita Rubin<br />Handjerystr. 60, 12161 Berlin<br /><a target="_blank" href="http://rubin-kindergarten.de/">http://rubin-kindergarten.de/</a>'));
+markers.push(L.marker([52.42758, 13.31328]).addTo(map).bindPopup('Kita Lili<br />Giesensdorfer Str. 11, 12207 Berlin<br /><a target="_blank" href="http://rubin-kindergarten.de/">http://rubin-kindergarten.de/</a>'));
+markers.push(L.marker([52.4134945, 13.0595135]).addTo(map).bindPopup('Kindergarten Vielfalt<br />Puschkinallee 14 , 14469 Potsdam<br /><a target="_blank" href="https://www.gfb-potsdam.de/CMS/index.php?option=com_content&amp;view=article&amp;id=222&amp;Itemid=1379">https://www.gfb-potsdam.de/CMS/index.php?option=com_content&amp;view=article&amp;id=222&amp;Itemid=1379</a>'));
+markers.push(L.marker([52.5401969, 13.6057662]).addTo(map).bindPopup('Kita Trickmännchen<br />Arneburgerstraße 10, 12627 Berlin<br /><a target="_blank" href="http://kita-marzahn-hellersdorf.de/">http://kita-marzahn-hellersdorf.de/</a>'));
+markers.push(L.marker([52.5105685, 13.3972507]).addTo(map).bindPopup('Kindergarten Umka<br />Leipziger Str. 47, 10117 Berlin-Mitte<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.5476563, 13.5059605]).addTo(map).bindPopup('Kindergarten Matrjoschka<br />Heckelberger Ring 3, 13055 Berlin-Lichtenberg<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.5376856, 13.543835]).addTo(map).bindPopup('Kindergarten Teremok<br />Bruno-Baum-Str. 58, 12687 Berlin<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.5458505, 13.5988307]).addTo(map).bindPopup('Kindergarten Warumka<br />Mittenwalder Str. 14, 12629 Berlin<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.45525, 13.33317]).addTo(map).bindPopup('Kindergarten Blumenstadt<br />Selerweg 19-21, 12169 Berlin<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.39546, 13.09328]).addTo(map).bindPopup('Kindergarten Stadt der Meister<br />Karl-Liebknecht-Str. 113, 14482 Potsdam<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.50118, 13.35622]).addTo(map).bindPopup('Kindergarten Goldenes Schlüsselchen<br />Kurfürstenstraße 135, 10785 Berlin<br /><a target="_blank" href="http://www.mitra-kindergarten.de/de/28.html">http://www.mitra-kindergarten.de/de/28.html</a>'));
+markers.push(L.marker([52.4915173, 13.5349423]).addTo(map).bindPopup('Kindergarten Römerweg<br />Römerweg 106/112, 10318 Berlin<br /><a target="_blank" href="https://www.kigaeno.de/kindergaerten/roemerweg/">https://www.kigaeno.de/kindergaerten/roemerweg/</a>'));
+markers.push(L.marker([52.5451, 13.36362]).addTo(map).bindPopup('Kita Wunderland<br />Gerichtstr. 40, 13347 Berlin<br /><a target="_blank" href="http://www.kitanetz.de/13347/gerichtstr40.htm">http://www.kitanetz.de/13347/gerichtstr40.htm</a>'));
+markers.push(L.marker([52.50581, 13.51434]).addTo(map).bindPopup('Kita Glückspilze Haus 1<br />Alfred – Kowalke – Str. 40a, 10315 Berlin<br /><a target="_blank" href="http://www.kita-glueckspilze.de/">http://www.kita-glueckspilze.de/</a>'));
+markers.push(L.marker([52.50698, 13.50351]).addTo(map).bindPopup('Kita Glückspilze Haus 2<br />Archenholdstr. 29, 10315 Berlin<br /><a target="_blank" href="http://www.kita-glueckspilze.de/">http://www.kita-glueckspilze.de/</a>'));
+markers.push(L.marker([52.51493, 13.55537]).addTo(map).bindPopup('Kita Glückspilze Haus 3<br />Oberfeldstr. 190, 12683 Berlin<br /><a target="_blank" href="http://www.kita-glueckspilze.de/">http://www.kita-glueckspilze.de/</a>'));
+markers.push(L.marker([52.5188773, 13.4505032]).addTo(map).bindPopup('Kita &quot; Die schlauen Mäuschen &quot;<br />Eckertstrasse 17, 10249 Berlin<br /><a target="_blank" href="http://dieschlauenmaeuschen.de.tl/">http://dieschlauenmaeuschen.de.tl/</a>'));
+markers.push(L.marker([52.5244405, 13.3090248]).addTo(map).bindPopup('Internationaler Kindergarten „Multi Lingua“<br />Nordhauser Str. 30 , 10589 Berlin<br /><a target="_blank" href="http://www.multilingua-berlin.de/">http://www.multilingua-berlin.de/</a>'));
+markers.push(L.marker([52.52545, 13.29897]).addTo(map).bindPopup('Kita Cheburashka Charlottenburg<br />Mindener Str. 11, 10589 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.5039937, 13.3032877]).addTo(map).bindPopup('Kita Cheburashka Charlottenburg Haus Birkholz<br />Gervinusstr. 40, 10629 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.554885, 13.4225452]).addTo(map).bindPopup('Kita Cheburashka Pankow<br />Thulestr. 42, 13189 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.55217, 13.42864]).addTo(map).bindPopup('Kita Cheburashka Pankow<br />Wisbyer Str. 36-37, 13189 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.5352202, 13.4371554]).addTo(map).bindPopup('Kita Cheburashka Prenzlauer Berg<br />Bernhard-Lichtenberg-Str. 9, 10407 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.535554, 13.4296384]).addTo(map).bindPopup('Kita Cheburashka Winsviertel<br />Jablonskistraße 35, 10405 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.39399, 13.42022]).addTo(map).bindPopup('Kita Cheburashka Tempelhof<br />Nahariyastr. 40, 12309 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.53125, 13.34966]).addTo(map).bindPopup('Kita Cheburashka Tiergarten<br />Wilsnacker Str. 40, 10559 Berlin<br /><a target="_blank" href="http://kitacheburashka.de/">http://kitacheburashka.de/</a>'));
+markers.push(L.marker([52.4759, 13.33805]).addTo(map).bindPopup('Kindergarten Berliner Spatzen<br />Hähnelstr.15a, 12159 Berlin<br /><a target="_blank" href="http://www.mehrsprachige-kitas.de/berliner-spatzen">http://www.mehrsprachige-kitas.de/berliner-spatzen</a>'));
+markers.push(L.marker([52.4525479, 13.3221755]).addTo(map).bindPopup('Kindergarten Spatzenhaus<br />Martinstr. 1, 12167 Berlin<br /><a target="_blank" href="http://www.mehrsprachige-kitas.de/spatzenhaus">http://www.mehrsprachige-kitas.de/spatzenhaus</a>'));
+markers.push(L.marker([52.42939, 13.3519]).addTo(map).bindPopup('Kindergarten Lankwitzer Parkspatzen<br />Beselerstr. 1-3, 12249 Berlin<br /><a target="_blank" href="http://www.mehrsprachige-kitas.de/lankwitzer-parkspatzen">http://www.mehrsprachige-kitas.de/lankwitzer-parkspatzen</a>'));
+markers.push(L.marker([52.6006, 13.31538]).addTo(map).bindPopup('EKT - &quot;Welt für Kinder&quot;<br />Rue Racine 7/7A, 13469 Berlin<br /><a target="_blank" href="http://www.kitanetz.de/13469/rueracine7a.htm">http://www.kitanetz.de/13469/rueracine7a.htm</a>'));
+markers.push(L.marker([52.493262, 13.3514]).addTo(map).bindPopup('Kita &quot;Welt für Kinder&quot;<br />Frankenstr. 12, 10781 Berlin<br /><a target="_blank" href="http://www.kita.de/kita/41873">http://www.kita.de/kita/41873</a>'));
+markers.push(L.marker([52.5271965, 13.1603146]).addTo(map).bindPopup('Kita &quot;Welt für Kinder&quot;<br />Magistratsweg 69, 13591 Berlin<br /><a target="_blank" href="http://www.kita.de/kita/41874">http://www.kita.de/kita/41874</a>'));
+markers.push(L.marker([52.60184, 13.31406]).addTo(map).bindPopup('Kita &quot;Welt für Kinder&quot;<br />Avenue Charles de Gaulle 35, 13469 Berlin<br /><a target="_blank" href="http://www.kita.de/kita/41996">http://www.kita.de/kita/41996</a>'));
+markers.push(L.marker([52.53602, 13.18421]).addTo(map).bindPopup('Kindergarten Kükenbande 1<br />Staakener Strasse 16, 13581 Berlin<br /><a target="_blank" href="http://kuekenbande.de/">http://kuekenbande.de/</a>'));
+markers.push(L.marker([52.52533, 13.30334]).addTo(map).bindPopup('Kindergarten Kükenbande 2<br />Mierendorfstr. 7, 10589 Berlin<br /><a target="_blank" href="http://kuekenbande.de/">http://kuekenbande.de/</a>'));
+markers.push(L.marker([52.42045, 13.36709]).addTo(map).bindPopup('Kita Marienfelder Allee im ZAB<br />Marienfelder Allee 66, 12277 Berlin<br /><a target="_blank" href="http://www.kita.de/kita/41536">http://www.kita.de/kita/41536</a>'));
+markers.push(L.marker([52.52469, 13.48139]).addTo(map).bindPopup('Kita Rübchen<br />Paul-Zobel-Straße 8g, 10367 Berlin<br /><a target="_blank" href="http://www.kidclever.de/dt-russ-kita-ruumlbchen.html">http://www.kidclever.de/dt-russ-kita-ruumlbchen.html</a>'));
+markers.push(L.marker([52.5098756, 13.5025579]).addTo(map).bindPopup('Kita Mausezahn<br />Einbecker Straße 32, 10317 Berlin<br /><a target="_blank" href="http://www.kidclever.de/kita-mausezahn.html">http://www.kidclever.de/kita-mausezahn.html</a>'));
+
+    // see https://stackoverflow.com/questions/16845614/zoom-to-fit-all-markers-in-mapbox-or-leaflet
+    var group = new L.featureGroup(markers);
+    map.fitBounds(group.getBounds());
+</script>
+  </body>
+</html>

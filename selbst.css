@@ -1,0 +1,64 @@
+body {
+        padding-top: 10px;
+        padding-bottom: 40px;
+        font-family: Georgia;
+        font-size: 21px;
+        line-height: 30px;
+        background-image:url(bilder/hintergrund.png);
+      }
+      
+      .span3 a {
+        color: black;
+        font-size: 115%;
+        line-height: 115%;
+      }
+      
+      .span3 .active a {
+        color: black;
+        background-image:url(bilder/hintergrund.png);
+        text-shadow: none;
+      }
+      
+       .span3 .active a:hover {
+        color: black;
+        background-image:url(bilder/hintergrund.png);
+        text-shadow: none;
+      }
+
+      .span3 a:hover { 
+        color:black;
+        background-image:url(bilder/hintergrund.png);
+      }
+
+      .span11 a {
+        color: black;
+        font-size: 90%;
+      }
+
+      blockquote {
+        text-align: right; border-left: none;
+      } 
+      
+      blockquote p {
+        font-size:90%;
+      } 
+
+      .nav-list ul, .nav-list li {
+        font-family: Georgia;
+        font-size:22px;
+        line-height:42px;
+        background-image:url(bilder/hintergrund.png);
+      }
+
+        ul, li {
+        font-family: Georgia;
+        font-size: 21px;
+        line-height: 30px;;
+      }
+
+      .table th, .table td {
+        font-family: Georgia;
+        font-size:21px;
+        line-height:30px;
+        background-image:url(bilder/hintergrund.png);
+      }
