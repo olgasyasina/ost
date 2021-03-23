@@ -4,7 +4,7 @@ body {
         font-family: Georgia;
         font-size: 21px;
         line-height: 30px;
-        background-image:url(bilder/hintergrund.png);
+        background-color:#dbf5f3;
       }
       
       .span3 a {
@@ -15,19 +15,19 @@ body {
       
       .span3 .active a {
         color: black;
-        background-image:url(bilder/hintergrund.png);
+        background-color:#dbf5f3;
         text-shadow: none;
       }
       
        .span3 .active a:hover {
         color: black;
-        background-image:url(bilder/hintergrund.png);
+        background-color:#dbf5f3;
         text-shadow: none;
       }
 
       .span3 a:hover { 
         color:black;
-        background-image:url(bilder/hintergrund.png);
+        background-color:#dbf5f3;
       }
 
       .span11 a {
@@ -47,7 +47,7 @@ body {
         font-family: Georgia;
         font-size:22px;
         line-height:42px;
-        background-image:url(bilder/hintergrund.png);
+        background-color:#dbf5f3;
       }
 
         ul, li {
@@ -60,5 +60,5 @@ body {
         font-family: Georgia;
         font-size:21px;
         line-height:30px;
-        background-image:url(bilder/hintergrund.png);
+        background-color:#dbf5f3;
       }
