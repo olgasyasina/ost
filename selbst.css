@@ -19,7 +19,7 @@ body {
         text-shadow: none;
       }
       
-       .span3 .active a:hover {
+      .span3 .active a:hover {
         color: black;
         background-color:#ecfaf9;
         text-shadow: none;
@@ -31,17 +31,13 @@ body {
       }
 
       .span11 a {
-        color: black;
+        color: grey;
         font-size: 90%;
       }
 
-      blockquote {
-        text-align: right; border-left: none;
-      } 
-      
-      blockquote p {
-        font-size:90%;
-      } 
+      .span7 a {
+        color: grey;
+      }
 
       .nav-list ul, .nav-list li {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -53,12 +49,5 @@ body {
         ul, li {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 21px;
-        line-height: 30px;;
-      }
-
-      .table th, .table td {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size:21px;
-        line-height:30px;
-        background-color:#ecfaf9;
+        line-height: 30px;
       }
